@@ -1,0 +1,346 @@
+header {
+  // Topbar section
+  .topbarSection {
+    display: flex;
+    background: #353535;
+    color: #fff;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    cursor: default;
+  }
+
+  // Search bar section
+  .searchSection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+
+    .searchWrapper {
+      display: flex;
+      max-width: 1600px;
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      height: 88px;
+      justify-content: space-between;
+      .searchBar {
+        width: 100%;
+        max-width: 790px;
+
+        .searchBarContainer {
+          position: relative;
+
+          input {
+            box-sizing: border-box;
+            max-width: 790px;
+            width: 100%;
+            height: 40px;
+            background: #efefef;
+            border: none;
+            border-radius: 10px;
+            padding-left: 24px;
+
+            &::placeholder {
+              display: flex;
+              color: #353535;
+              font-weight: 400;
+              font-size: 12px;
+            }
+          }
+
+          button {
+            width: 120px;
+            height: 100%;
+            position: absolute;
+            cursor: pointer;
+            right: 0;
+            background: #faa500;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+          }
+        }
+      }
+
+      .userSection {
+        display: flex;
+        width: 100%;
+        max-width: 422px;
+        max-height: 46px;
+        justify-content: space-between;
+        align-items: center;
+
+        .userWrapper {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+          }
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #353535;
+            line-height: 20px;
+          }
+
+          .userIcon {
+            margin-left: 2.8px;
+          }
+
+          &:last-child a {
+            box-sizing: border-box;
+            padding: 12px 14px 12px 17px;
+            border-radius: 8px;
+            border: 1px solid #faa500;
+            height: 46px;
+          }
+        }
+      }
+    }
+  }
+
+  // Menu
+  .menuSection {
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.16);
+
+    .menuWrapper {
+      max-width: 1220px;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .menuItem {
+          width: 165px;
+
+          a {
+            display: flex;
+            align-items: center;
+            height: 48px;
+            color: #353535;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-decoration: none;
+
+            img {
+              margin-right: 9.75px;
+            }
+
+            &:hover {
+              color: #faa500;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  // Swiper slide
+  .customPrev,
+  .customNext {
+    width: 20px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .customPrev {
+    left: 161px;
+  }
+
+  .customNext {
+    right: 161px;
+  }
+
+  .swiper-pagination {
+    bottom: 24px;
+  }
+
+  // Deals
+  // Add this to your existing SASS file
+
+  .dealsSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: 100%;
+    padding-top: 24px;
+    margin: 0 auto;
+  }
+
+  .dealsTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #353535;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  .dealsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dealsContainer {
+    min-width: 307px;
+    max-height: 64px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 7.5px;
+    background: #efefef;
+    border-radius: 4px;
+  }
+
+  .dealsCard {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .dealsIcon {
+    margin-right: 22px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .dealsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+
+    strong {
+      font-size: 14px;
+      color: #353535;
+      line-height: 21px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: #000;
+      line-height: 18px;
+    }
+  }
+
+  // Brands
+  .brandsSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: 100%;
+    padding-top: 24px;
+    margin: 0 auto;
+  }
+
+  .brandsTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #353535;
+    text-align: center;
+    margin-bottom: 21px;
+    line-height: 49px;
+  }
+
+  .brandsList {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brandsContainer {
+    min-width: 307px;
+    max-height: 64px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 7.5px;
+    border-radius: 4px;
+  }
+
+  .brandsCard {
+    box-sizing: border-box;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 0;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      margin: 0;
+      max-height: 64px;
+    }
+  }
+
+  .brandsIcon {
+    margin-right: 22px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .brandsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+
+    strong {
+      font-size: 14px;
+      color: #353535;
+      line-height: 21px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: #000;
+      line-height: 18px;
+    }
+  }
+}
