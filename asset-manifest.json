@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/maeztra-layout/static/css/main.3370f868.css",
+    "main.js": "/maeztra-layout/static/js/main.c5469c68.js",
+    "static/media/menuDressIcon.svg": "/maeztra-layout/static/media/menuDressIcon.6934a682ad5b972fee40de7a24cf1fa5.svg",
+    "static/media/logo.svg": "/maeztra-layout/static/media/logo.7a921dd8dac464d23134301511e3606e.svg",
+    "static/media/cartIcon.svg": "/maeztra-layout/static/media/cartIcon.5b580d13948cb30040a2dc393307d8d2.svg",
+    "static/media/wishlistIcon.svg": "/maeztra-layout/static/media/wishlistIcon.a39c292a0b9663e62bf748d45be7c93a.svg",
+    "static/media/userIcon.svg": "/maeztra-layout/static/media/userIcon.8cfbe15c1376a0d63bb0f863faa57c35.svg",
+    "index.html": "/maeztra-layout/index.html",
+    "static/media/swiper_icon-next.svg": "/maeztra-layout/static/media/swiper_icon-next.83e7ad7f89ca4b4de4508ef8ac5514ce.svg",
+    "static/media/swiper_icon-prev.svg": "/maeztra-layout/static/media/swiper_icon-prev.0bd951a23fb07a13713b4230a9f4c3e0.svg",
+    "main.3370f868.css.map": "/maeztra-layout/static/css/main.3370f868.css.map",
+    "main.c5469c68.js.map": "/maeztra-layout/static/js/main.c5469c68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3370f868.css",
+    "static/js/main.c5469c68.js"
+  ]
+}
