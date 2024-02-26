@@ -9,6 +9,7 @@ import logo from "../../assets/logo.svg";
 import userIcon from "../../assets/userIcon.svg";
 import wishlistIcon from "../../assets/wishlistIcon.svg";
 import cartIcon from "../../assets/cartIcon.svg";
+import cartIconMobile from "../../assets/cartIconMobile.svg";
 import dressIcon from "../../assets/menuDressIcon.svg";
 import customNextArrow from "../../assets/swiper_icon-next.svg";
 import customPrevArrow from "../../assets/swiper_icon-prev.svg";
@@ -33,10 +34,12 @@ const Home = () => {
     const bullets = bannerSection.querySelectorAll(".swiper-pagination-bullet");
     const pagination = bannerSection.querySelector(".swiper-pagination");
 
+    const isMobile = window.innerWidth < 980;
+
     if (bullets) {
       bullets.forEach((bullet) => {
-        bullet.style.width = "12px";
-        bullet.style.height = "12px";
+        bullet.style.width = isMobile ? "8px" : "12px";
+        bullet.style.height = isMobile ? "8px" : "12px";
         bullet.style.borderRadius = "50%";
         bullet.style.border = "2px solid #faa500";
         bullet.style.background = "transparent";
@@ -75,6 +78,60 @@ const Home = () => {
               <a href="/" title="Logo">
                 <img src={logo} alt="Logo" className={styles.headerLogoImg} />
               </a>
+            </div>
+
+            <div className={styles.menuMobileLeft}>
+              <div className={styles.menuMobile}>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.0625 11.0625H0.9375C0.419719 11.0625 0 11.4822 0 12C0 12.5178 0.419719 12.9375 0.9375 12.9375H23.0625C23.5803 12.9375 24 12.5178 24 12C24 11.4822 23.5803 11.0625 23.0625 11.0625Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M23.0625 3.5625H0.9375C0.419719 3.5625 0 3.98222 0 4.5C0 5.01778 0.419719 5.4375 0.9375 5.4375H23.0625C23.5803 5.4375 24 5.01778 24 4.5C24 3.98222 23.5803 3.5625 23.0625 3.5625Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M23.0625 18.5625H0.9375C0.419719 18.5625 0 18.9822 0 19.5C0 20.0178 0.419719 20.4375 0.9375 20.4375H23.0625C23.5803 20.4375 24 20.0178 24 19.5C24 18.9822 23.5803 18.5625 23.0625 18.5625Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+
+              <div className={styles.headerLogoMobile}>
+                <a href="/" title="Logo">
+                  <img src={logo} alt="Logo" className={styles.headerLogoImg} />
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.menuMobileRight}>
+              <div className={styles.searchIconMobile}>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.8535 22.4395L16.8817 15.4677C18.204 13.8351 19 11.7597 19 9.50004C19 4.26175 14.7383 0 9.49999 0C4.2617 0 0 4.26175 0 9.50004C0 14.7383 4.26175 19.0001 9.50004 19.0001C11.7597 19.0001 13.8351 18.204 15.4677 16.8817L22.4395 23.8536C22.6348 24.0488 22.9513 24.0488 23.1467 23.8536L23.8536 23.1466C24.0488 22.9513 24.0488 22.6347 23.8535 22.4395ZM9.50004 17.0001C5.3643 17.0001 2.00002 13.6358 2.00002 9.50004C2.00002 5.3643 5.3643 2.00002 9.50004 2.00002C13.6358 2.00002 17.0001 5.3643 17.0001 9.50004C17.0001 13.6358 13.6358 17.0001 9.50004 17.0001Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+
+              <div className={styles.minicartMobile}>
+                <a href="/">
+                  <img src={cartIconMobile} alt="Minicart" />
+                </a>
+              </div>
             </div>
 
             <div className={styles.searchBar}>
@@ -219,8 +276,11 @@ const Home = () => {
                 slidesPerView={1.05}
                 loop={false}
                 breakpoints={{
-                  720: {
+                  1100: {
                     slidesPerView: 5,
+                  },
+                  720: {
+                    slidesPerView: 3,
                   },
                 }}
               >
@@ -315,8 +375,11 @@ const Home = () => {
                 slidesPerView={1.05}
                 loop={false}
                 breakpoints={{
-                  720: {
+                  1100: {
                     slidesPerView: 5,
+                  },
+                  720: {
+                    slidesPerView: 3,
                   },
                 }}
               >
