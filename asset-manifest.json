@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/maeztra-layout/static/css/main.5f3349e7.css",
-    "main.js": "/maeztra-layout/static/js/main.44e5e29a.js",
+    "main.css": "/maeztra-layout/static/css/main.72e1574c.css",
+    "main.js": "/maeztra-layout/static/js/main.160ae921.js",
     "static/media/menuDressIcon.svg": "/maeztra-layout/static/media/menuDressIcon.6934a682ad5b972fee40de7a24cf1fa5.svg",
     "static/media/logo.svg": "/maeztra-layout/static/media/logo.7a921dd8dac464d23134301511e3606e.svg",
     "static/media/cartIconMobile.svg": "/maeztra-layout/static/media/cartIconMobile.60c99eda6882da76a3d20cb7f3ead467.svg",
@@ -11,11 +11,11 @@
     "index.html": "/maeztra-layout/index.html",
     "static/media/swiper_icon-next.svg": "/maeztra-layout/static/media/swiper_icon-next.83e7ad7f89ca4b4de4508ef8ac5514ce.svg",
     "static/media/swiper_icon-prev.svg": "/maeztra-layout/static/media/swiper_icon-prev.0bd951a23fb07a13713b4230a9f4c3e0.svg",
-    "main.5f3349e7.css.map": "/maeztra-layout/static/css/main.5f3349e7.css.map",
-    "main.44e5e29a.js.map": "/maeztra-layout/static/js/main.44e5e29a.js.map"
+    "main.72e1574c.css.map": "/maeztra-layout/static/css/main.72e1574c.css.map",
+    "main.160ae921.js.map": "/maeztra-layout/static/js/main.160ae921.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3349e7.css",
-    "static/js/main.44e5e29a.js"
+    "static/css/main.72e1574c.css",
+    "static/js/main.160ae921.js"
   ]
 }
