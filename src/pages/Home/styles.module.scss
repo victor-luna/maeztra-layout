@@ -16,10 +16,18 @@ header {
 
   // Search bar section
   .searchSection {
+    position: fixed;
+    background-color: #fff;
+    margin-top: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     width: 100%;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: top 0.3s ease-out;
 
     .searchWrapper {
       display: flex;
@@ -182,6 +190,14 @@ header {
           }
         }
       }
+    }
+
+    &.searchSectionFixed {
+      position: fixed;
+      top: -24px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
     }
   }
 
@@ -826,6 +842,11 @@ footer {
       justify-content: space-between;
       align-items: flex-start;
 
+      @media (max-width: 980px) {
+        display: block;
+        margin: 0 31px;
+      }
+
       .footerColumn {
         margin: 0;
         padding: 0;
@@ -835,6 +856,12 @@ footer {
         font-size: 100%;
         font-family: inherit;
         vertical-align: baseline;
+
+        &:not(:last-child) {
+          @media (max-width: 980px) {
+            margin-bottom: 17px;
+          }
+        }
       }
 
       .footerTitle {
@@ -844,12 +871,42 @@ footer {
         line-height: 18px;
         margin: 0 0 25px;
         padding: 0;
+
+        @media (max-width: 980px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+
+          &::after {
+            content: "+";
+          }
+
+          &.menos::after {
+            content: "-";
+          }
+        }
       }
 
       .footerList {
         list-style: none;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+
+        @media (max-width: 980px) {
+          max-height: 0;
+          opacity: 0;
+
+          transition: max-height 0.3s ease-out, opacity 0.3s ease-out,
+            padding-top 0.3s ease-out;
+
+          &.menos {
+            max-height: 350px;
+            opacity: 1;
+            padding-top: 15px;
+          }
+        }
 
         .footerLink {
           display: block;
@@ -889,6 +946,12 @@ footer {
       justify-content: space-between;
       align-items: center;
 
+      .socialNetworks {
+        @media (max-width: 980px) {
+          margin-bottom: 35px;
+        }
+      }
+
       .socialNetworksList {
         display: flex;
         justify-content: flex-start;
@@ -911,6 +974,12 @@ footer {
               fill: #faa500;
             }
           }
+        }
+      }
+
+      .payment {
+        @media (max-width: 980px) {
+          margin-bottom: 35px;
         }
       }
 
@@ -947,6 +1016,13 @@ footer {
           }
         }
       }
+      @media (max-width: 980px) {
+        flex-direction: column;
+      }
     }
+    @media (max-width: 980px) {
+      flex-direction: column;
+    }
+    padding: 24px 0 32px;
   }
 }
