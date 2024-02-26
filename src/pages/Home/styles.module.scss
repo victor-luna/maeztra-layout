@@ -1053,3 +1053,150 @@ footer {
     padding: 24px 0 32px;
   }
 }
+
+// Modal Newsletter
+
+.modalNewsletter {
+  width: 850px;
+  height: 530px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  transition: all 0.2s ease-out;
+
+  .modalNewsletterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #fff;
+
+    .modalNewsletterCloseButton {
+      position: absolute;
+      right: 0;
+      bottom: calc(100% + 6px);
+      font-family: "Lato", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .modalNewsletterImage {
+      img {
+        display: block;
+      }
+
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+
+    .modalNewsletterContent {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px 20px 24px;
+
+      .modalNewsletterIcon {
+        display: flex;
+        margin-bottom: 13px;
+      }
+
+      .modalNewsletterWelcome {
+        font-size: 12px;
+        font-weight: 400;
+        color: #464b54;
+        line-height: 20px;
+        margin-bottom: 13px;
+      }
+
+      .modalNewsletterTitle {
+        font-size: 20px;
+        font-weight: 400;
+        color: #787d83;
+        line-height: 24px;
+        margin-bottom: 25px;
+        text-align: center;
+
+        strong {
+          font-family: "Lato", sans-serif;
+        }
+
+        @media (max-width: 980px) {
+          font-size: 16px;
+          padding: 0 5px;
+        }
+      }
+
+      .modalNewsletterForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .modalNewsletterInput {
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 10px;
+          border: 1px solid #c4c4c4;
+          background: #fff;
+          height: 40px;
+          padding: 0 15px !important;
+          margin-bottom: 12.5px;
+
+          &::placeholder {
+            font-size: 12px;
+            font-weight: 400;
+            color: #787d83;
+          }
+        }
+
+        .modalNewsletterButton {
+          width: 100%;
+          height: 40px;
+          background: #faa500;
+          border-radius: 10px;
+          border: none;
+          font-size: 12px;
+          font-weight: 700;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.2s ease-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            margin-left: 8px;
+          }
+
+          &:hover {
+            background-color: #353535;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    width: 300px;
+    height: 307px;
+  }
+}
+
+.modalNewsletterMask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 201;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-out;
+  z-index: 2000;
+}
